@@ -1,0 +1,204 @@
+/* Reset default browser styles */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Set default font family and color */
+  body {
+    font-family: Arial, sans-serif;
+    color: #333;
+  }
+  
+  /* Style the header */
+  header {
+    background-color: #f2f2f2;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  header h1 {
+    font-size: 36px;
+  }
+  
+  nav ul {
+    list-style: none;
+    display: flex;
+  }
+  
+  nav li {
+    margin: 0 10px;
+  }
+  
+  nav a {
+    text-decoration: none;
+    color: #333;
+    font-size: 20px;
+  }
+  
+  nav a:hover {
+    color: #0066cc;
+  }
+  
+  /* Style the main section */
+  main {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    margin: 20px 0;
+  }
+  
+  section {
+    width: 45%;
+  }
+  
+  section h2 {
+    font-size: 28px;
+    margin-bottom: 10px;
+  }
+  
+  ul {
+    list-style: none;
+  }
+  
+  li {
+    margin-bottom: 10px;
+  }
+  
+  li a {
+    color: #333;
+    text-decoration: none;
+  }
+  
+  li a:hover {
+    color: #0066cc;
+  }
+  
+  /* Style the footer */
+  footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  footer p {
+    font-size: 16px;
+  }
+  
+  footer a {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  footer a:hover {
+    text-decoration: underline;
+  }
+ 
+/* shop department and shop area*/
+.sidebar {
+    width: 200px;
+  }
+  
+  .sidebar-header {
+    margin-bottom: 10px;
+    position: relative;
+  }
+  
+  .sidebar-button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: #f2f2f2;
+    color: #333;
+    border: none;
+    text-align: left;
+    cursor: pointer;
+  }
+  
+  .sidebar-dropdown {
+    display: none;
+    position: absolute;
+    top: 100%; 
+    left: 0;
+    background-color: #fff;
+    padding: 10px;
+    list-style: none;
+    margin: 0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+  }
+  
+  .sidebar-dropdown li {
+    margin-bottom: 5px;
+  }
+  
+  .sidebar-dropdown a {
+    display: block;
+    padding: 5px;
+    color: #333;
+    text-decoration: none;
+  }
+
+  .sidebar-dropdown:hover {
+    display: block; /* Add this line */
+  }
+
+  .sidebar-button:hover + .sidebar-dropdown, .sidebar-dropdown:hover {
+    display: block;
+  }
+  
+  
+/* Products side nav bar*/
+.sidebar {
+    width: 200px;
+  }
+  
+  .main-categories {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .main-categories li {
+    position: relative;
+  }
+  
+  .main-categories li a {
+    display: block;
+    padding: 10px;
+    background-color: #f2f2f2;
+    color: #333;
+    text-decoration: none;
+  }
+  
+  .main-categories li:hover > .sub-categories {
+    display: block;
+  }
+  
+  .sub-categories {
+    display: none;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    position: absolute;
+    top: 0;
+    left: 100%;
+    background-color: #fff;
+    border: 1px solid #ccc;
+  }
+  
+  .sub-categories li a {
+    display: block;
+    padding: 10px;
+    color: #333;
+    text-decoration: none;
+  }
+  
+  .sub-categories li a:hover {
+    background-color: #f2f2f2;
+  }
+  
