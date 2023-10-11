@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Like</title>
+</head>
+<body>
+    <center>
+        <h1>请选出你最喜欢的节日</h1>
+        <table>
+            <tr>
+                <td>ID</td>
+                <td>节日名</td>
+                <td>点赞数</td>
+                <td>操作</td>
+            </tr>
+            
+            {% for i in data %}
+            <tr>
+                <td>{{ i.id }}</td>
+                <td>{{ i.name }}</td>
+                <td>{{ i.num }}</td>
+                <td><a href="/dianzan?id={{ i.id }}">点赞</a></td>
+            </tr>  
+            {% endfor %}  
+             
+        </table>
+    </center>
+</body>
+</html>
